@@ -45,7 +45,6 @@ function displayInventory() {
                     console.log("You will be charged: " + result.quantity*selectedItem[0].Price + " dollars. Thank you for shopping with Bamazon!");
                     connection.query('UPDATE products SET Stock_Quantity=? WHERE Item_Id=?', [selectedItem[0].Stock_Quantity - quantity, itemId], function(err, inventory) {
                         if (err) throw err;
-                        displayInventory();
                     });
                 } else {
                     console.log("Insufficient Inventory! Bamazon only has " + selectedItem[0].Stock_Quantity + " of that item left.");
