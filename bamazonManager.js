@@ -5,13 +5,12 @@ var connection = mysql.createConnection({
     host:'localhost',
     port: 3306,
     user: 'root',
-    password: 'root',
+    password: '',
     database: 'bamazon_DB'
 });
 
 connection.connect(function(err) {
     if (err) throw err;
-    console.log("You have connected to " + connection.threadId);
 });
 
 inquirer.prompt([
@@ -57,7 +56,10 @@ function viewLowInventory() {
         for (var i=0; i <inventory.length; i++) {
                 console.log("These items have low inventory. Please Address.");
                 console.log("Item ID: " + inventory[i].Item_ID + " | Product: " + inventory[i].Product_Name + " | Quantity: " + inventory[i].Stock_Quantity);            
-        }
+        } if (typeof(inventory) === null || typeof(undefined)) {
+            console.log("No low inventory");
+            connection.end();
+        };
     });
 };
 
