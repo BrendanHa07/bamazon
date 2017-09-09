@@ -1,4 +1,4 @@
-# bamazon
+# :fire: bamazon :fire:
 
 ## Description
 This is an Amazon-like storefront application that uses Node.js and MySQL. It also uses the npm inquirer and mysql packages. The app is a command line Node app that has two interfaces: customer and manager.
