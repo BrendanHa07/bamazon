@@ -21,7 +21,7 @@ The **View Products for Sale** option allows the user to view current inventory 
 
 ![viewproducts](https://user-images.githubusercontent.com/25389907/30236642-dff8f7de-94d2-11e7-9cf3-6a5d327429b4.PNG)
 
-The **View Low Inventory** option allows the user to view which products currently have less than 5 units left.
+The **View Low Inventory** option allows the user to view which products currently have less than 5 units left. When no items have an inventory of less than 5, "All other items have sufficient inventory" will be displayed to the user.
 
 ![lowinventory](https://user-images.githubusercontent.com/25389907/30236670-6ee2b476-94d3-11e7-94d4-84c703a9c9a9.PNG)
 
@@ -29,7 +29,7 @@ The **Add to Inventory** option allows the user to select an item ID and add to 
 
 ![addinventory](https://user-images.githubusercontent.com/25389907/30236676-a058d9c2-94d3-11e7-99d0-82c7226001cd.PNG)
 
-The **Add New Product** option allows the user to enter a new item into the database.
+The **Add New Product** option allows the user to enter a new item into the database. A new Item ID will be generated for this item.
 
 ![additem](https://user-images.githubusercontent.com/25389907/30236688-e77666a8-94d3-11e7-955f-696b0499ccd5.PNG)
 
