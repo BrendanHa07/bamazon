@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
     host:'localhost',
     port: 3306,
     user: 'root',
-    password: 'root',
+    password: '',
     database: 'bamazon_DB'
 });
 
@@ -57,7 +57,7 @@ function viewLowInventory() {
                 console.log("These items have low inventory. Please Address.");
                 console.log("Item ID: " + inventory[i].Item_ID + " | Product: " + inventory[i].Product_Name + " | Quantity: " + inventory[i].Stock_Quantity);            
         } if (typeof(inventory) === null || typeof(undefined)) {
-            console.log("No low inventory");
+            console.log("All other items have sufficient inventory");
             connection.end();
         };
     });
