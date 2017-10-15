@@ -37,5 +37,5 @@ The **Add New Product** option allows the user to enter a new item into the data
 - Node.js
 - MySQL
 - Inquirer
--
+
 
