@@ -33,3 +33,9 @@ The **Add New Product** option allows the user to enter a new item into the data
 
 ![additem](https://user-images.githubusercontent.com/25389907/30236688-e77666a8-94d3-11e7-955f-696b0499ccd5.PNG)
 
+## Technologies Used
+- Node.js
+- MySQL
+- Inquirer
+-
+
